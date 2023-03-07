@@ -1,5 +1,5 @@
 /* GOOGLE FONT IMPORT [POPPINS] */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
 
 /* DEFAULTS */
 * {
@@ -32,15 +32,26 @@ section:nth-of-type(odd) {
 
 section:nth-of-type(even) {
 	color: black;
-	background-color: #2ea1fe;
+	background-color: #2988d6;
 }
 
 button {
+	cursor: pointer;
 	height: 2rem;
-	width: 5rem;
-	background-color: #2ea1fe;
+	width: 7rem;
+	font-weight: 300;
+	color: #fff;
+	background-color: #2988d6;
 	border: none;
 	border-radius: 10px;
+}
+
+button:hover {
+	border: 1px solid #fff;
+}
+
+button:active {
+	transform: scale(0.9);
 }
 
 /* HEADER */
@@ -51,7 +62,7 @@ header {
 	position: fixed;
 	top: 0;
 	background-color: #202020;
-	border-bottom: 1px solid #2ea1fe;
+	border-bottom: 1px solid #2988d6;
 	display: flex;
 	justify-content: space-between;
 }
@@ -72,10 +83,11 @@ header img {
 
 .links a {
 	color: #fff;
+	font-weight: 200;
 }
 
 .links a:hover {
-	color: #2ea1fe;
+	color: #2988d6;
 }
 
 /* HERO SECTION */
@@ -99,6 +111,7 @@ header img {
 .hero img {
 	height: 250px;
 	width: 400px;
+	border: 1px solid #2988d6;
 	border-radius: 15px;
-	box-shadow: 0 0 0.3rem #000;
+	box-shadow: 0 0 0.5rem #000;
 }
