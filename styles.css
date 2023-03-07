@@ -24,6 +24,7 @@ h1 {
 section {
 	height: fit-content;
 	width: 100%;
+	padding-bottom: 4rem;
 }
 
 section:nth-of-type(odd) {
@@ -54,6 +55,18 @@ button:active {
 	transform: scale(0.9);
 }
 
+img {
+	border: 1px solid #2988d6;
+	border-radius: 15px;
+	box-shadow: 0 0 0.5rem #000;
+}
+
+figcaption {
+	text-align: center;
+	font-size: 0.7rem;
+	font-weight: 200;
+}
+
 /* HEADER */
 header {
 	height: 4rem;
@@ -63,6 +76,7 @@ header {
 	top: 0;
 	background-color: #202020;
 	border-bottom: 1px solid #2988d6;
+	box-shadow: 0 0 0.75rem #000;
 	display: flex;
 	justify-content: space-between;
 }
@@ -70,6 +84,8 @@ header {
 header img {
 	height: 100%;
 	margin-left: 1rem;
+	border: none;
+	box-shadow: none;
 }
 
 .links {
@@ -111,7 +127,69 @@ header img {
 .hero img {
 	height: 250px;
 	width: 400px;
-	border: 1px solid #2988d6;
+}
+
+/* TOOLBOX SECTION */
+.toolbox {
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.toolbox h2 {
+	margin-bottom: 2rem;
+}
+
+.tools-container {
+	display: flex;
+	justify-content: space-evenly;
+	padding-right: 1rem;
+}
+
+.tool img {
+	height: 200px;
+	width: 200px;
+}
+
+.tool p {
+	font-size: 1.1rem;
+	font-weight: 300;
+}
+
+/* QUOTE SECTION */
+blockquote {
+	width: 50%;
+	margin: 4rem auto 0 auto;
+	font-weight: 200;
+	font-style: italic;
+}
+
+/* CALL TO ACTION SECTION */
+.cta-container {
+	padding: 4rem;
+}
+
+.cta {
+	padding: 2rem;
+	color: #fff;
+	background-color: #202020;
 	border-radius: 15px;
-	box-shadow: 0 0 0.5rem #000;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.cta-text {
+	width: 60%;
+}
+
+.cta-text p {
+	font-weight: 200;
+}
+
+/* FOOTER */
+footer {
+	padding: 2rem 0;
+	text-align: center;
+	font-weight: 200;
+	font-size: 0.9rem;
 }
