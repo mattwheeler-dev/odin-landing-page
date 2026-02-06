@@ -1,38 +1,30 @@
-/* GOOGLE FONT IMPORT [POPPINS] */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 
-/* DEFAULTS */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Poppins", Arial, Helvetica, sans-serif;
+	font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 body {
 	height: auto;
 	width: 100vw;
 	color: #fff;
-	background-color: #505050;
+	background-color: #303030;
 	overflow-x: hidden;
-}
-
-h1 {
-	font-weight: 300;
 }
 
 section {
 	height: fit-content;
 	width: 100%;
-	padding-bottom: 4rem;
-}
-
-section:nth-of-type(odd) {
-	background-color: #505050;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 4rem 0;
 }
 
 section:nth-of-type(even) {
-	color: black;
+	color: #000;
 	background-color: #2988d6;
 }
 
@@ -45,10 +37,12 @@ button {
 	background-color: #2988d6;
 	border: none;
 	border-radius: 10px;
+	transition: all 0.2s ease;
 }
 
 button:hover {
-	border: 1px solid #fff;
+	border: 2px solid #fff;
+	box-shadow: 0 0 0.25rem #000;
 }
 
 button:active {
@@ -67,7 +61,6 @@ figcaption {
 	font-weight: 200;
 }
 
-/* HEADER */
 header {
 	height: 4rem;
 	width: 100%;
@@ -88,9 +81,13 @@ header img {
 	box-shadow: none;
 }
 
+header ul {
+	list-style-type: none;
+}
+
 .links {
 	height: 100%;
-	width: 30%;
+	width: 50%;
 	margin-right: 1rem;
 	display: flex;
 	align-items: center;
@@ -100,15 +97,17 @@ header img {
 .links a {
 	color: #fff;
 	font-weight: 200;
+	text-decoration: none;
+	transition: all 0.2s ease;
 }
 
 .links a:hover {
 	color: #2988d6;
+	font-weight: 400;
 }
 
-/* HERO SECTION */
 .hero {
-	padding: 5rem;
+	padding: 5rem 2rem;
 	margin-top: 2rem;
 	display: flex;
 	justify-content: space-between;
@@ -120,76 +119,63 @@ header img {
 }
 
 .hero-text p {
-	margin: 0.25rem 0;
-	font-weight: 200;
+	margin: 0.5rem 0;
 }
 
 .hero img {
-	height: 250px;
-	width: 400px;
+	height: 300px;
+	width: auto;
 }
 
-/* TOOLBOX SECTION */
 .toolbox {
 	text-align: center;
-	padding-top: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .toolbox h2 {
+	width: 100%;
 	margin-bottom: 2rem;
 }
 
-.tools-container {
-	display: flex;
-	justify-content: space-evenly;
-	padding-right: 1rem;
+.tool {
+	width: 22%;
 }
 
 .tool img {
 	height: 200px;
-	width: 200px;
+	width: 100%;
 }
 
 .tool p {
 	font-size: 1.1rem;
-	font-weight: 300;
 }
 
-/* QUOTE SECTION */
 blockquote {
 	width: 50%;
-	margin: 4rem auto 0 auto;
+	margin: 0 auto;
 	font-weight: 200;
 	font-style: italic;
 }
 
-/* CALL TO ACTION SECTION */
 .cta-container {
-	padding: 4rem;
-}
-
-.cta {
-	padding: 2rem;
-	color: #fff;
-	background-color: #202020;
-	border-radius: 15px;
 	display: flex;
-	justify-content: space-around;
 	align-items: center;
+	justify-content: space-evenly;
 }
 
 .cta-text {
-	width: 60%;
+	width: 40%;
 }
 
-.cta-text p {
-	font-weight: 200;
+.cta-container button {
+	border: 2px solid #fff;
 }
 
-/* FOOTER */
 footer {
 	padding: 2rem 0;
 	text-align: center;
 	font-weight: 200;
-	font-size: 0.9rem;
 }
